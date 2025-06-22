@@ -33,8 +33,22 @@ module/
 
 ## Встановлення
 
-1. Помістіть модуль у директорію `addons`.
-2. Запустіть оновлення модулів:
+1. Активуйте `venv`
+    ```bash
+    for Mac:
+    python3 -m venv venv
+    source venv/bin/activate
+
+    for Windows/Linux:
+    python -m venv venv
+    venv\Scripts\activate
+
+    ```
+2. Запустіть контейнери:
+   ```bash
+   docker compose up -d
+   ```
+   Оновіть:
    ```bash
    odoo -u module -d test_db --stop-after-init
    ```
