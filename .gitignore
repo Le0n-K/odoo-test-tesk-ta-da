@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+*.egg-info/
+
+# VS Code
+.vscode/
+
+# Odoo data
+odoo-data/
+postgres-data/
+
+# Docker
+*.log
+*.pid
+*.sock
+
+# Other
+*.db
+*.swp
+*.DS_Store
+*.bak

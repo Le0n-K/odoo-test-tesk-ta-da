@@ -1,0 +1,38 @@
+<odoo>
+  <record id="view_my_first_model_tree" model="ir.ui.view">
+    <field name="name">my.first.model.tree</field>
+    <field name="model">my.first.model</field>
+    <field name="arch" type="xml">
+      <tree string="My First Models">
+        <field name="name"/>
+        <field name="places"/>
+        <field name="active"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_my_first_model_form" model="ir.ui.view">
+    <field name="name">my.first.model.form</field>
+    <field name="model">my.first.model</field>
+    <field name="arch" type="xml">
+      <form string="My First Model">
+        <sheet>
+          <group>
+            <field name="name"/>
+            <field name="places"/>
+            <field name="active"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="action_my_first_model" model="ir.actions.act_window">
+    <field name="name">My First Models</field>
+    <field name="res_model">my.first.model</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <menuitem id="menu_my_first_model_root" name="My Module" sequence="10"/>
+  <menuitem id="menu_my_first_model" name="My First Models" parent="menu_my_first_model_root" action="action_my_first_model"/>
+</odoo>
